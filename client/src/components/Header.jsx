@@ -1,18 +1,19 @@
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
-  ArrowPathIcon,
+  PhotoIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
+  DevicePhoneMobileIcon,
+  GifIcon,
+  GlobeAltIcon,
   SquaresPlusIcon,
   XMarkIcon,
+  MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
 import {
   ChevronDownIcon,
   PhoneIcon,
-  PlayCircleIcon,
+  ArchiveBoxArrowDownIcon,
   UserCircleIcon,
 } from "@heroicons/react/20/solid";
 import logo from "../assets/images/codot.png";
@@ -20,38 +21,38 @@ import { Link } from "react-router-dom";
 
 const products = [
   {
-    name: "Analytics",
+    name: "Aplication",
     description: "Get a better understanding of your traffic",
     href: "/analytics",
-    icon: ChartPieIcon,
-  },
-  {
-    name: "Engagement",
-    description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
-  },
-  {
-    name: "Security",
-    description: "Your customers’ data will be safe and secure",
-    href: "#",
-    icon: FingerPrintIcon,
-  },
-  {
-    name: "Integrations",
-    description: "Connect with third-party tools",
-    href: "#",
     icon: SquaresPlusIcon,
   },
   {
-    name: "Automations",
+    name: "Logo Design",
+    description: "Speak directly to your customers",
+    href: "#",
+    icon: GifIcon,
+  },
+  {
+    name: "Web Design",
+    description: "Your customers’ data will be safe and secure",
+    href: "#",
+    icon: GlobeAltIcon,
+  },
+  {
+    name: "Mobile Design",
+    description: "Connect with third-party tools",
+    href: "#",
+    icon: DevicePhoneMobileIcon,
+  },
+  {
+    name: "Images",
     description: "Build strategic funnels that will convert",
     href: "#",
-    icon: ArrowPathIcon,
+    icon: PhotoIcon,
   },
 ];
 const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
+  { name: "Colection", href: "#", icon: ArchiveBoxArrowDownIcon },
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
 const member = [
@@ -106,7 +107,7 @@ export default function Header() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-green-900 hover:text-green-500">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-green-900 hover:text-green-500 ml-10">
               Product
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-green-800"
@@ -219,20 +220,31 @@ export default function Header() {
             href="#"
             className="text-sm font-semibold leading-6 text-green-900 hover:text-green-500"
           >
-            Features
+            Blog
           </Link>
           <Link
             href="#"
             className="text-sm font-semibold leading-6 text-green-900 hover:text-green-500"
           >
-            Marketplace
+            Categories
           </Link>
           <Link
             href="#"
             className="text-sm font-semibold leading-6 text-green-900 hover:text-green-500"
           >
-            Company
+            Mobile
           </Link>
+          <Link
+            href="#"
+            className="text-sm font-semibold leading-6 text-green-900 hover:text-green-500"
+          >
+            Website
+          </Link>
+          <input className="border-solid rounded pl-2" placeholder="Search" />
+          <MagnifyingGlassIcon
+            className="h-5 w-5 flex-none text-green-800 -ml-10"
+            aria-hidden="true"
+          />
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
