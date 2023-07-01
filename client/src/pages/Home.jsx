@@ -1,11 +1,34 @@
 import React from "react";
-import Header from "../components/Header";
+import Feature from "../components/Feature";
+import Hero from "../components/Hero";
+import image from "../assets/images/image.jpg";
+import image1 from "../assets/images/image1.jpg";
 
 function Home() {
   return (
     <div>
-      <Header />
-      <div style={{ height: "1000px" }}>cek</div>
+      <div
+        className="bg-fixed bg-blend-overlay bg-no-repeat bg-cover"
+        style={{
+          backgroundImage: `url(${image})`,
+          width: "100%",
+          height: "500px",
+        }}
+      >
+        <Hero />
+      </div>
+      <div className="mt-20" style={{ height: "500px" }}>
+        <Feature />
+      </div>
+      <div
+        className="bg-fixed bg-blend-overlay bg-no-repeat bg-cover -mt-10"
+        style={{
+          backgroundImage: `url(${image1})`,
+          width: "100%",
+          height: "500px",
+        }}
+      ></div>
+      <div className="mt-20" style={{ height: "500px" }}></div>
     </div>
   );
 }

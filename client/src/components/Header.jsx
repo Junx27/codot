@@ -23,37 +23,33 @@ const products = [
   {
     name: "Aplication",
     description: "Get a better understanding of your traffic",
-    href: "/analytics",
+    href: "/aplication",
     icon: SquaresPlusIcon,
   },
   {
     name: "Logo Design",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/logodesign",
     icon: GifIcon,
   },
   {
     name: "Web Design",
     description: "Your customers’ data will be safe and secure",
-    href: "#",
+    href: "/webdesign",
     icon: GlobeAltIcon,
   },
   {
     name: "Mobile Design",
     description: "Connect with third-party tools",
-    href: "#",
+    href: "/mobiledesign",
     icon: DevicePhoneMobileIcon,
   },
   {
     name: "Images",
     description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/images",
     icon: PhotoIcon,
   },
-];
-const callsToAction = [
-  { name: "Colection", href: "#", icon: ArchiveBoxArrowDownIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
 const member = [
   {
@@ -65,7 +61,7 @@ const member = [
   {
     name: "Senna Bhany Majid",
     description: "Web Designer and Programmer",
-    href: "#",
+    href: "https://jualan-xi.vercel.app/",
     icon: UserCircleIcon,
   },
   {
@@ -107,11 +103,11 @@ export default function Header() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-green-900 hover:text-green-500 ml-10">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-green-900 hover:text-green-500 ml-10 px-2 outline-none">
               Product
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-green-800"
-                aria-hidden="true"
+                aria-hidden="false"
               />
             </Popover.Button>
 
@@ -133,47 +129,34 @@ export default function Header() {
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          className="h-6 w-6 text-gray-600 group-hover:text-green-600 group-hover:animate-bounce"
                           aria-hidden="true"
                         />
                       </div>
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-semibold text-gray-900 group-hover:text-green-900"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-1 text-gray-600 group-hover:text-green-600">
+                          {item.description}
+                        </p>
                       </div>
                     </div>
-                  ))}
-                </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                    >
-                      <item.icon
-                        className="h-5 w-5 flex-none text-gray-400"
-                        aria-hidden="true"
-                      />
-                      {item.name}
-                    </a>
                   ))}
                 </div>
               </Popover.Panel>
             </Transition>
           </Popover>
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-green-900 hover:text-green-500">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-green-900 hover:text-green-500 px-2 outline-none">
               Member
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-green-800"
-                aria-hidden="true"
+                aria-hidden="false"
               />
             </Popover.Button>
 
@@ -195,19 +178,21 @@ export default function Header() {
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          className="h-6 w-6 text-gray-600 group-hover:text-green-600 group-hover:animate-bounce"
                           aria-hidden="true"
                         />
                       </div>
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-semibold text-gray-900 group-hover:text-green-900"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-1 text-gray-600 group-hover:text-green-600">
+                          {item.description}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -217,25 +202,25 @@ export default function Header() {
           </Popover>
 
           <Link
-            href="#"
+            to="/blog"
             className="text-sm font-semibold leading-6 text-green-900 hover:text-green-500"
           >
             Blog
           </Link>
           <Link
-            href="#"
+            to="/categories"
             className="text-sm font-semibold leading-6 text-green-900 hover:text-green-500"
           >
             Categories
           </Link>
           <Link
-            href="#"
+            to="/mobile"
             className="text-sm font-semibold leading-6 text-green-900 hover:text-green-500"
           >
             Mobile
           </Link>
           <Link
-            href="#"
+            to="/website"
             className="text-sm font-semibold leading-6 text-green-900 hover:text-green-500"
           >
             Website
@@ -249,7 +234,7 @@ export default function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="#"
-            className="text-sm font-semibold leading-6 text-gray-900 border py-1 px-3 rounded bg-green-800 text-white hover:bg-green-200 hover:text-green-800  animate-pulse"
+            className="text-sm font-semibold leading-6 text-gray-900 border py-1 px-3 rounded bg-green-800 text-white hover:bg-green-200 hover:text-green-800"
           >
             Log in <span aria-hidden="true">&rarr;</span>
           </Link>
@@ -294,7 +279,7 @@ export default function Header() {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
+                        {[...products].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"
