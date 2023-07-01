@@ -70,7 +70,7 @@ const member = [
   {
     name: "Tri Saptono",
     description: "Web Designer and Programmer",
-    href: "#",
+    href: "https://webpertama-4mqv.vercel.app/",
     icon: UserCircleIcon,
   },
 ];
