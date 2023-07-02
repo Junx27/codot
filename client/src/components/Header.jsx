@@ -10,12 +10,7 @@ import {
   XMarkIcon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  ArchiveBoxArrowDownIcon,
-  UserCircleIcon,
-} from "@heroicons/react/20/solid";
+import { ChevronDownIcon, UserCircleIcon } from "@heroicons/react/20/solid";
 import logo from "../assets/images/codot.png";
 import { Link } from "react-router-dom";
 

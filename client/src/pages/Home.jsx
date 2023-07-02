@@ -3,6 +3,8 @@ import Feature from "../components/Feature";
 import Hero from "../components/Hero";
 import image from "../assets/images/image.jpg";
 import image1 from "../assets/images/image1.jpg";
+import Blog from "../components/Blog";
+import Contact from "../components/Contact";
 
 function Home() {
   return (
@@ -29,6 +31,10 @@ function Home() {
         }}
       ></div>
       <div className="mt-20" style={{ height: "500px" }}></div>
+      <div className="mt-40">
+        <Blog />
+      </div>
+      <Contact />
     </div>
   );
 }

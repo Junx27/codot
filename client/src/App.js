@@ -11,6 +11,7 @@ import WebDesign from "./pages/WebDesign";
 import LogoDesign from "./pages/LogoDesign";
 import Images from "./pages/Images";
 import Categories from "./pages/Categories";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/logodesign" element={<LogoDesign />} />
           <Route exact path="/categories" element={<Categories />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
