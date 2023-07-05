@@ -12,12 +12,18 @@ import LogoDesign from "./pages/LogoDesign";
 import Images from "./pages/Images";
 import Categories from "./pages/Categories";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
     <div>
       <Router>
         <Header />
+        <div className="flex justify-end mr-20">
+          <ScrollToTop />
+        </div>
+        <ScrollTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/aplication" element={<Aplication />} />

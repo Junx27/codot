@@ -68,3 +68,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+this for use DOM
+
+1. npm react-router-dom
+2. create file => src/components/Navbar.js
+3. create file => src/pages/Home.js
+4. touch Home.js import Navbar.js "import Navbar from "../components/Nabvar"
+5. call Nabar in Home.js <Navbar /> to apply
+6. touch App.js import { BrowserRouter as Router, Routes, Route } from "react-router-dom", and import Home from "./pages/Home"
+7. create <Router><Routes><Route exact path="/" element={<Home />} /></Routes></Router>
+
+Doc Tailwind Css
+
+Class
+link: https://tailwind.build/classes
+
+Template
+link: https://tailwindui.com/templates
+
+Element
+link: https://tailwind-elements.com/
