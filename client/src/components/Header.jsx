@@ -75,7 +75,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-green-100 sticky top-0">
+    <header className="bg-white sticky top-0">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -206,7 +206,7 @@ export default function Header() {
             to="/categories"
             className="text-sm font-semibold leading-6 text-green-900 hover:text-green-500"
           >
-            Categories
+            Marketplace
           </Link>
           <Link
             to="/mobile"
@@ -220,7 +220,10 @@ export default function Header() {
           >
             Website
           </Link>
-          <input className="border-solid rounded pl-2" placeholder="Search" />
+          <input
+            className="border-solid rounded pl-2 outline-none"
+            placeholder="Search"
+          />
           <MagnifyingGlassIcon
             className="h-5 w-5 flex-none text-green-800 -ml-10"
             aria-hidden="true"
@@ -229,7 +232,7 @@ export default function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="#"
-            className="text-sm font-semibold leading-6 text-gray-900 border py-1 px-3 rounded bg-green-800 text-white hover:bg-green-200 hover:text-green-800"
+            className="text-sm font-semibold leading-6 text-gray-900 border py-1 px-3 rounded text-green-800 hover:bg-green-400 hover:text-black"
           >
             Log in <span aria-hidden="true">&rarr;</span>
           </Link>
