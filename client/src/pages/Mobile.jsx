@@ -92,7 +92,7 @@ function Mobile() {
               </div>
             </div>
             <p className="text-black text-sm font-bold ml-2 mt-2">{app.name}</p>
-            <p className="text-green-800 font-bold text-center py-2 border rounded-lg mt-2 hover:bg-green-300 hover:text-black">
+            <p className="text-blue-800 font-bold text-center py-2 border rounded-lg mt-2 hover:bg-blue-300 hover:text-black">
               {app.price}
             </p>
           </div>

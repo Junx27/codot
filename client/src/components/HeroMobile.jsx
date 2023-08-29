@@ -2,7 +2,7 @@ import React from "react";
 
 function HeroMobile() {
   return (
-    <div className="grid grid-cols-4 gap-2 bg-green-100 pb-10">
+    <div className="grid grid-cols-4 gap-2 pb-10">
       <div className="m-20 col-span-2">
         <h1 className="font-bold text-6xl">
           Happy <br />
